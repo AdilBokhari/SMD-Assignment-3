@@ -50,10 +50,15 @@ public class MainActivity extends AppCompatActivity {
         loadFutureTasks();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setOnItemSelectedListener(item -> {
-            if (item.getItemId() == R.id.bottomNavigation) {
+            if (item.getItemId() == R.id.nav_upcoming) {
                 return true;
             } else if (item.getItemId() == R.id.nav_past) {
                 Intent intent = new Intent(MainActivity.this, PastTasks.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+                return true;
+            } else if (item.getItemId()==R.id.nav_profile) {
+                Intent intent = new Intent(MainActivity.this, Profile.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
                 return true;

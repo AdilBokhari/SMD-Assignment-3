@@ -30,6 +30,12 @@ public class PastTasks extends AppCompatActivity {
                 return true;
             } else if (item.getItemId() == R.id.nav_past) {
                 return true;
+            } else if (item.getItemId()==R.id.nav_profile) {
+                Intent intent = new Intent(PastTasks.this, Profile.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+                finish();
+                return true;
             }
             return false;
         });

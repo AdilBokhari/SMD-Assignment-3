@@ -1,4 +1,5 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/nav_upcoming" android:icon="@android:drawable/ic_menu_today" android:title="Upcoming Tasks"/>
     <item android:id="@+id/nav_past" android:icon="@android:drawable/ic_menu_recent_history" android:title="Past Tasks"/>
+    <item android:id="@+id/nav_profile" android:icon="@drawable/baseline_manage_accounts_24" android:title="Profile" />
 </menu>
